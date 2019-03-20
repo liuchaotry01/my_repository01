@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>liuchao</title>
+    <input id="t1" type="number" max="10">
+    <button onclick="myFun()">验证</button>
+    <p id="t2">haha</p>
+</head>
+<body>
+<script>
+    function myFun() {
+        var txt = "";
+        if(document.getElementById("t1").validity.rangeOverflow){
+            txt = "输入的值太大了";
+        }else{
+            txt = "输入正确";
+        }
+        document.getElementById("t2").innerHTML = txt;
+    }
+</script>
+</body>
+</html>

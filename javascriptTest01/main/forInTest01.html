@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>liuchao</title>
+</head>
+<body>
+<p>ni hao</p>
+<p id = "t1">hhh</p>
+<button onclick="myFunc()">点我</button>
+<script>
+  function myFunc() {
+      var txt = "";
+      var a = {name:"liuchao",age:18,sex:"man"};
+      for (var i in a){
+          txt = txt +a[i]+"<br>";
+      }
+      document.getElementById("t1").innerHTML = txt;
+  }
+</script>
+</body>
+</html>

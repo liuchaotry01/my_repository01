@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>liuchao</title>
+</head>
+<body>
+<h>start</h><br>
+
+<script>
+
+     var str1 = "123456qwer123456qwer";
+     var n1 = str1.search(/6q/i);
+     var n2 = str1.search(/456/g);
+     var n3 = str1.search(/456/m);
+     var n4 = str1.search(/[5]/);
+     var n5 = str1.search(/6qw+/);
+     var n6 = str1.search(/56*/);
+     var p1 = /456/;
+     var str2 = str1.replace(/456/i,"haha")
+
+     document.write(str1+"<br>");
+     document.write("n1:"+n1+"<br>");
+     document.write("n2:"+n2+"<br>");
+     document.write("n4:"+n4+"<br>");
+     document.write("n5:"+n5+"<br>");
+     document.write("n6:"+n6+"<br>");
+     document.write("p1:"+p1.test(str1)+"<br>");
+     document.write("p2:"+/qwe/.test(str1)+"<br>");
+     document.write(str1.search("456")+"<br>");
+     document.write(str2+"<br>");
+
+</script>
+</body>
+</html>
